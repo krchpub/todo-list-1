@@ -13,7 +13,9 @@
   color: silver;
   text-decoration: line-through;
 }
-
+.mydate {
+  margin-left:220px;
+}
 .btn {
   background-color: rgb(29, 132, 167);
   border-radius: 20px 20px;
@@ -24,8 +26,8 @@
   font-size: 22px;
   top: 5px;
   left:10px;
-  line-height: 23px;
-  padding-bottom:3px
+  line-height: 21px;
+  padding-bottom:5px
 }
 
 .btn:hover {opacity: 0.8;}
@@ -34,8 +36,8 @@
 
 .btn-floating {
   background-color: rgb(29, 132, 167);
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 input[type='date'].disabled::-webkit-inner-spin-button {
   display: none;
