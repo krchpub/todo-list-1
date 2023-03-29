@@ -1,0 +1,62 @@
+.ml-5 {
+  margin-left: 5px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.m10 {
+  margin: 10px;
+}
+.done {
+  color: silver;
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: rgb(29, 132, 167);
+  border-radius: 20px 20px;
+ 
+}
+
+.addbtn {
+  font-size: 22px;
+  top: 5px;
+  left:10px;
+  line-height: 23px;
+  padding-bottom:3px
+}
+
+.btn:hover {opacity: 0.8;}
+
+.btn-floating:hover {opacity: 0.8;}
+
+.btn-floating {
+  background-color: rgb(29, 132, 167);
+  width: 30px;
+  height: 30px;
+}
+input[type='date'].disabled::-webkit-inner-spin-button {
+  display: none;
+}
+
+.content {
+  overflow: auto;
+  height: 500px;
+  max-height: 500px;
+  
+}
+.row{
+  background-color:transparent; 
+  box-shadow: none;
+}
+
+.nav-wrapper {
+  background-color: rgb(86, 183, 216);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.footer-copyright, .page-footer{
+  background-color: rgb(86, 183, 216);
+}
