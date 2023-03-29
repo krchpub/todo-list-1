@@ -1,4 +1,5 @@
 import { Component, Inject, LOCALE_ID } from '@angular/core';
+import {Task} from './task';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,22 @@ import { Component, Inject, LOCALE_ID } from '@angular/core';
 })
 export class AppComponent {
 conf: {[key:string]:string | Date} = null;
+
+tasks: Task[] = [
+  {
+    name:'Silownia',
+    deadline:'2020-01-20',
+    done:false},
+  {
+    name:'Nauka',
+    deadline:'2020-01-22',
+    done:true},
+  {
+    name:'Wyjazd do Turcji',
+    deadline:'2020-02-20',
+    done:false},
+];
+
 
 numb= 9.890328590;
 lista= ['cholera','dupa','kurcze','psia krew'];
