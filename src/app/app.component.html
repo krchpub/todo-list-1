@@ -6,7 +6,7 @@
   </nav>
 
   <div class="row ">
-    <button class="btn m10 s2 offset-s10">Dodaj </button>
+    <button class="btn m10 s2 offset-s10" (click)=addTasks()>Dodaj </button>
     <button class="btn  s2 offset-s10">Zakończ</button>
     <span class="mydate">{{conf?.date | date:'yy.MM.dd HH:mm':'':'pl'}}</span>
   </div>
@@ -18,7 +18,7 @@
       placeholder="Dodaj zadanie i datę wykonania"
     />
     <input class="col s2 disabled" type="date" />
-    <button class="btn-floating addbtn">+</button>
+    <button class="btn-floating addbtn" (click)=addTasks()>+</button>
   </div>
 
   <ul class="collection">
@@ -41,7 +41,7 @@
   <h1>Dzisiaj brak zadań :-) {{conf?.happy ? 'Jestem happy' : 'Nie jestem happy'}}</h1>
 
   <div class="row">
-  <button class="btn s2 col offset-s10">Wyczyść</button>
+  <button class="btn s2 col offset-s10" (click)="clearTasks()">Wyczyść</button>
 </div>
   <footer class="page-footer mt-5">
     <div class="footer-copyright">
