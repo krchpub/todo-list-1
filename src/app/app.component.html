@@ -16,9 +16,10 @@
       class="col s8"
       type="text"
       placeholder="Dodaj zadanie i datę wykonania"
+      #mname
     />
-    <input class="col s2 disabled" type="date" />
-    <button class="btn-floating addbtn" (click)=addTasks()>+</button>
+    <input class="col s2 disabled" type="date" #mdate/>
+    <button class="btn-floating addbtn" (click)="addTasks(mname.value,mdate.value);mname.value=''">+</button>
   </div>
 
   <ul class="collection">

@@ -60,11 +60,11 @@ showAlert(){
 clearTasks(){
   this.tasks =[];
 }
-addTasks(){
+addTasks(mname:string,mdate:string){
   const task: Task =
     {
-      name:'Silownia',
-      deadline:'2020-01-20',
+      name:mname,
+      deadline:mdate,
       done:false}
   
   this.tasks.push(task);
