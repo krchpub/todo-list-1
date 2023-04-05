@@ -61,19 +61,13 @@ clearTasks(){
   this.tasks =[];
 }
 addTasks(){
-  this.tasks =[
+  const task: Task =
     {
       name:'Silownia',
       deadline:'2020-01-20',
-      done:false},
-    {
-      name:'Nauka',
-      deadline:'2020-01-22',
-      done:true},
-    {
-      name:'Wyjazd do Turcji',
-      deadline:'2020-02-20',
-      done:false},
-  ];
+      done:false}
+  
+  this.tasks.push(task);
 }
+
 }
