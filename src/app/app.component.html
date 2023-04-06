@@ -16,10 +16,13 @@
       class="col s8"
       type="text"
       placeholder="Dodaj zadanie i datę wykonania"
+      (keyup)="0"
       #mname
     />
-    <input class="col s2 disabled" type="date" #mdate/>
-    <button class="btn-floating addbtn" (click)="addTasks(mname.value,mdate.value);mname.value=''">+</button>
+    <input class="col s3 disabled" type="date" (change)="0" #mdate />
+    <button class="btn-floating addbtn" (click)="addTasks(mname.value,mdate.value);mname.value=''"
+    [disabled]="mname.value==='' || mdate.value===''"
+    >+</button>
   </div>
 
   <ul class="collection">
@@ -27,7 +30,7 @@
       <span class="col s10">{{i+1}}. {{task.name}} - {{task.deadline |date:'yyyy.MM.dd EEEE'}}</span>
       <div class="col s2 right-align">
         <button class="btn-floating btn-small red">
-          <i class="material-icons">remove</i>
+          <i class="material-icons" (click)=removeTask(i)>remove</i>
         </button>
         <button class="btn-floating btn-small green ml-5">
           <i class="material-icons">check</i>

@@ -57,7 +57,12 @@ showAlert(){
   alert("Uwaga, uwaga! Nie klikaj na ten przycisk!");
 }
 
+removeTask(i:number){
+  this.tasks.splice(i,1);
+}
+
 clearTasks(){
+  
   this.tasks =[];
 }
 addTasks(mname:string,mdate:string){
